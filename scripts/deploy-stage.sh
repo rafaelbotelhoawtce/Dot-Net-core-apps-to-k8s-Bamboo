@@ -14,7 +14,7 @@ helm repo add helm $HELM_REPO
 helm repo update
 
 #helm install
-helm install --namespace staging --name dotnetcorebmb-latest-stage --set image.repository=sugendh/dotnetcorebmb,image.tag=latest helm/devops
+helm install --namespace staging --name dotnetcorebmb-latest-stage --set image.repository==rafaelbotelhoawtce/hdc,image.tag=latest helm/devops
 
 #helm upgrade
 #/usr/local/bin/helm upgrade --install --namespace staging dotnetcorebmb-latest-stage --set image.repository=sugendh/dotnetcorebmb,image.tag=latest helm/devops
