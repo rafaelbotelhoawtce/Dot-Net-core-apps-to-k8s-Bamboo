@@ -16,7 +16,7 @@ HELM_REPO=$bamboo_HELM_REPO
 #helm fetch http://23.101.135.43/artifactory/helm-local/devops-0.45.0.tgz
 
 #helm install
-/usr/local/bin/helm install --namespace test --name dotnetcorebmb-latest-test --set image.repository=sugendh/dotnetcorebmb,image.tag=latest helm/devops
+/usr/local/bin/helm install --namespace test --name dotnetcorebmb-latest-test --set image.repository=rafaelbotelhoawtce/hdc,image.tag=latest helm/devops
 
 #helm upgrade
-#/usr/local/bin/helm upgrade --install --namespace test dotnetcorebmb-latest-test --set image.repository=sugendh/dotnetcorebmb,image.tag=latest helm/devops
+#/usr/local/bin/helm upgrade --install --namespace test dotnetcorebmb-latest-test --set image.repository=rafaelbotelhoawtce/hdc,image.tag=latest helm/devops
