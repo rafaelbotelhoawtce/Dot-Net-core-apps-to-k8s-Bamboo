@@ -19,3 +19,4 @@ HELM_REPO=$bamboo_HELM_REPO
 #helm upgrade
 #helm upgrade --install --namespace production dotnetcorebmb-latest-prod --set image.repository=sugendh/dotnetcorebmb,image.tag=latest helm/devops
 
+kubectl run myapplication --labels="app=myapplication" --image=rafaelbotelhoawtce/hdc:latest --replicas=2 --port=8080
