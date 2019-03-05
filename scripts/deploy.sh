@@ -2,7 +2,6 @@
 
 HELM_REPO=$bamboo_HELM_REPO
 
-
 #create env if not present
 kubectl create ns test
 
