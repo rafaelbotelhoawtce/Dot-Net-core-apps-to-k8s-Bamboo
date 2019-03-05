@@ -16,7 +16,7 @@ HELM_REPO=$bamboo_HELM_REPO
 #helm fetch http://23.101.135.43/artifactory/helm-local/devops-0.45.0.tgz
 
 #helm install
-/usr/local/bin/helm install --namespace default --name aw-application-latest-test --set image.repository=rafaelbotelhoawtce/hdc,image.tag=latest aw/devops
+/usr/local/bin/helm install --namespace test --name aw-application-latest-test --set image.repository=rafaelbotelhoawtce/hdc,image.tag=latest aw/devops
 
 #helm upgrade
-#/usr/local/bin/helm upgrade --install --namespace default aw-application-latest-test --set image.repository=rafaelbotelhoawtce/hdc,image.tag=latest aw/devops
+#/usr/local/bin/helm upgrade --install --namespace test aw-application-latest-test --set image.repository=rafaelbotelhoawtce/hdc,image.tag=latest aw/devops
