@@ -6,7 +6,7 @@ kubectl create ns production
 
 kubectl run hello-dotnet --image=rafaelbotelhoawtce/hdc:latest --port=8080 -n production
 sleep 60
-kubectl expose deployment hello-dotnet --type=LoadBalancer --port=8080 -n production
+kubectl expose deployment myapplication --type=LoadBalancer --port=8080 -n production
 
 #rm -rf helm
 helm repo add helm $HELM_REPO
