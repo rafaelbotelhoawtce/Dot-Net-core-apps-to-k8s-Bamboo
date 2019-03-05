@@ -4,7 +4,7 @@ HELM_REPO=$bamboo_HELM_REPO
 
 
 #create env if not present
-/usr/local/bin/kubectl create ns test
+kubectl create ns test
 
 #kubectl run hello-dotnet --image=sugendh/dotnetcorebmb:latest --port=8080 -n test
 #kubectl expose deployment hello-dotnet --type=LoadBalancer --port=8080 -n test
