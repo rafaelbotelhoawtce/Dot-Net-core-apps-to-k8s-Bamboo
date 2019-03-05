@@ -2,11 +2,14 @@
 
 HELM_REPO=$bamboo_HELM_REPO
 
+
 #create env if not present
 kubectl create ns test
 
+
 kubectl run myapplication --image=rafaelbotelhoawtce/hdc:latest --port=8080 -n test
 kubectl expose deployment myapplication --type=LoadBalancer --port=8080 -n test
+
 
 #rm -rf helm aaa
 helm repo add helm $HELM_REPO
